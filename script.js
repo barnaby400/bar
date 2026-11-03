@@ -25,16 +25,22 @@ function openSurprise() {
 
 const song = document.getElementById("mySong");
 
-function toggleMusic() {
+async function toggleMusic() {
     const song = document.getElementById("mySong");
     const musicBtn = document.getElementById("musicBtn");
 
     if (song.paused) {
-        song.play();
-        musicBtn.textContent = "Pause Music ♡";
+        try {
+            await song.play();
+            musicBtn.textContent = "Pause Music ♡";
+        } catch (error) {
+            console.error("Music error:", error);
+            musicBtn.textContent = "Play Music ♡";
+            alert("Lagu gagal diputar. Coba refresh halaman ya.");
+        }
     } else {
         song.pause();
-        musicBtn.textContent = "Press Play ♡";
+        musicBtn.textContent = "Play Music ♡";
     }
 }
 
