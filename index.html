@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Little Universe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- DECORATIONS -->
+    <div class="decorations" aria-hidden="true">
+        <span class="deco flower">🌷</span>
+        <span class="deco butterfly">🦋</span>
+        <span class="deco star">✧</span>
+        <span class="deco cloud">☁️</span>
+        <span class="deco heart">♡</span>
+        <span class="deco flower2">🌼</span>
+        <span class="deco sparkle">✦</span>
+        <span class="deco butterfly2">🦋</span>
+        <span class="deco star2">✧</span>
+    </div>
+
+    <!-- WELCOME PAGE -->
+    <main class="welcome" id="welcome">
+        <p class="subtitle">A LITTLE UNIVERSE MADE FOR YOU</p>
+
+        <h1>Happy Birthday, Sayang!</h1>
+
+        <p>
+            Today is your special day.
+            I hope your world is filled with happiness,
+            love, and beautiful little things.
+        </p>
+
+        <button onclick="openLetter()">Open Your Gift ♡</button>
+    </main>
+
+    <!-- LETTER PAGE -->
+    <main class="welcome hidden" id="letter">
+        <p class="subtitle">A LETTER FOR YOU</p>
+
+        <h1>Sayangku.</h1>
+
+        <p>
+            My dearest love,
+
+I'm so grateful to have you in my life. Even through a screen, you make my days feel a little brighter and my world a little warmer.
+
+I hope this little website reminds you how special you are to me. You deserve all the love and happiness in the world.
+
+Happy Birthday, my love. I love you, always.
+
+        </p>
+
+        <p class="signature">Sincerely, Barnaby.</p>
+
+        <button onclick="goBack()">Go Back</button>
+        <button onclick="openSurprise()">Open Your Surprise ♡</button>
+    </main>
+
+    <!-- SURPRISE PAGE -->
+    <main class="welcome hidden" id="surprise">
+
+        <p class="subtitle">A LITTLE SURPRISE FOR YOU</p>
+
+        <h1>Happy 18th Baby ♡</h1>
+
+        <img
+            src="assets/photo.jpg"
+            class="birthday-photo"
+            alt="A special picture"
+        >
+           <p class="photo-caption">I Cherish you.</p>
+<main></main>
+        <!-- MUSIC -->
+        <h2>🎵 Press Play, My Love</h2>
+
+    <button id="musicBtn" onclick="toggleMusic()">
+        ♫ Play Music 
+    </button> 
+
+</div>
+
+       <div class="music-player">
+    <audio id="mySong" preload="metadata">
+       <source src="./assets/Lagu-Baru.mp3" type="audio/mpeg">
+    </audio>
+
+    <button onclick="showPage('calendar')">
+    See Your Birthday Calendar ♡
+</button>
+   
+</div>
+        </button>
+
+        <!-- BIRTHDAY CAKE -->
+        <div class="cake">
+            <span class="candle">🕯</span>
+            🎂
+        </div>
+
+        <h2>Make a Birthday Wish!</h2>
+
+        <button onclick="makeWish()">Make a Wish ♡</button>
+
+        <p id="wish-message" class="hidden">
+            Your wish has been sent to the universe! ♡
+            May all your little wishes come true! ✨
+        </p>
+
+        <button onclick="goBack()">Go Back ♡</button>
+
+    </main>
+<main id="calendar" class="hidden">
+    <button onclick="showPage('coupons')">
+    Open Your Little Coupons ♡
+</button>
+    <section class="birthday-calendar">
+        <div>Today is</div>
+        <h2>November 2026</h2>
+        <p>& today is your birthday</p>
+
+        <div class="calendar-grid">
+            <div>Sun</div><div>Mon</div><div>Tue</div>
+            <div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+
+    
+            <span>1</span><span>2</span>
+
+            <div class="birthday-date">
+                <img src="./assets/photo2.jpg" alt="Birthday photo">
+                <strong>3</strong>
+                <small>♡</small>
+            </div>
+
+            <span>4</span><span>5</span><span>6</span><span>7</span>
+            <span>8</span><span>9</span><span>10</span><span>11</span>
+            <span>12</span><span>13</span><span>14</span><span>15</span>
+            <span>16</span><span>17</span><span>18</span><span>19</span>
+            <span>20</span><span>21</span><span>22</span><span>23</span>
+            <span>24</span><span>25</span><span>26</span><span>27</span>
+            <span>28</span><span>29</span><span>30</span>
+        </div>
+
+        <p>God blessed you sayang.</p>
+        <button onclick="showPage('surprise')">Go Back ♡</button>
+    </section>
+</main>
+<main id="coupons" class="hidden">
+    <div id="song-letter-popup" class="letter-popup hidden">
+    <div class="letter-paper">
+        <div>🎧 🎀</div>
+        <h2>A Song For You</h2>
+
+        <p>Saudari,</p>
+
+        <p>
+            If I could dedicate one song to you,
+            it would be All of Me by John Legend.
+        </p>
+
+        <p>
+            Because loving you means accepting
+            every little part of you.
+            Every smile, every little flaw,
+            and every moment we share.
+        </p>
+
+        <p>
+            I wish I could sing this song for you.
+            Until then, let this melody speak
+            all the words in my heart.
+        </p>
+
+        <p class="letter-signature">
+            This one's yours, always ♡<br>
+            With love, Barnaby.
+        </p>
+
+        <button onclick="closeSongLetter()">Close Letter ♡</button>
+    </div>
+</div>
+    <div id="love-letter-popup" class="letter-popup hidden">
+    <div class="letter-paper">
+        <div>💌 🌷</div>
+        <h2>To you, Saudari.</h2>
+
+        <p>
+            I don't think words will ever be enough to explain
+            how much you mean to me. But if there's one thing
+            I want you to know, it's that I'm grateful to have
+            you in my little world.
+        </p>
+
+        <p>
+            Every conversation, every little
+            laugh, and every moment we share means something
+            to me.
+        </p>
+
+        <p>
+            I hope you never forget how precious you are.
+            You deserve all the happiness this world can give.
+        </p>
+
+        <p>
+            I'll keep choosing you, in every little moment.
+        </p>
+
+        <p class="letter-signature">
+            With love, Bung.<br>
+        </p>
+
+        <button onclick="closeLoveLetter()">Close Letter ♡</button>
+    </div>
+</div>
+    <section class="coupon-page">
+        <div class="coupon-deco">🎀 🌷 🦋</div>
+        <h2>Little Love Coupons</h2>
+        <p>A few little things, just for you ♡</p>
+
+       <div class="coupon-list">
+
+    <div class="coupon" onclick="showKisses()">
+    <span>💋</span>
+    <h3>Virtual Kiss</h3>
+    <small>A thousand kisses for you</small>
+</div>
+
+    <div class="coupon" onclick="redeemCoupon('Virtual Hug 🫂')">
+        <span>🫂</span>
+        <h3>Virtual Hug</h3>
+        <small>A warm hug whenever you need one</small>
+    </div>
+
+    <div class="coupon" onclick="openSongLetter()">
+    <span>🎧</span>
+    <h3>Song Dedication</h3>
+    <small>A song that reminds me of you</small>
+</div>
+
+    <div class="coupon" onclick="openLoveLetter()">
+    <span>💌</span>
+    <h3>Love Letter</h3>
+    <small>Words written just for you</small>
+</div>
+
+    <div class="coupon" onclick="redeemCoupon('Late Night Talk 🌙')">
+        <span>🌙</span>
+        <h3>Late Night Talk</h3>
+        <small>Unlimited midnight conversations</small>
+    </div>
+
+    <div class="coupon" onclick="redeemCoupon('Your Choice 🎀')">
+        <span>🎀</span>
+        <h3>Your Choice</h3>
+        <small>One request, just for you</small>
+    </div>
+
+</div>
+<button onclick="showPage('ending')">
+    One Last Thing ♡
+</button>
+        <button onclick="showPage('calendar')">Go Back ♡</button>
+    </section>
+</main>
+<main id="ending" class="hidden">
+    <div class="ending-page">
+        <div class="ending-decor"> ✨</div>
+
+        <h1>The End of Our Little Story</h1>
+
+        <p>
+            And if I could make one wish,
+            it would be to keep making
+            beautiful memories with you.
+        </p>
+
+        <p>
+            Thank you for being part of my world.
+            Here's to more little moments,
+            more laughter, and more love.
+        </p>
+
+        <h2>I'll choose you, always. ♡</h2>
+
+        <p class="ending-signature">
+            With love, Barnabi ♡
+        </p>
+
+        <button onclick="showPage('welcome')">
+            Back to Home ♡
+        </button>
+    </div>
+</main>
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+</html>
